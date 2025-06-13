@@ -1,0 +1,261 @@
+{
+  "alunos": [
+    { "id": 1,
+      "name": "Maria Silva",
+      "email": "maria@email.com",
+      "password": "senha123",
+      "cursoId": 1,
+      "matricula": "2131cs",
+      "periodoAtual": 1
+    },
+    { "id": 2,
+      "name": "João Lima",
+      "email": "joao@email.com",
+      "password": "123456",
+      "cursoId": 2,
+      "matricula": "ds4245",
+      "periodoAtual": 4}
+  ],
+
+  "boletins": [
+    {
+      "id": 1,
+      "alunoId": 1,
+      "periodo": "2025/1",
+      "disciplinas": [
+        {
+          "codigo": "011001131",
+          "nome": "ALGORITMOS E PROGRAMAÇÃO I",
+          "faltas": 2,
+          "a1": 7.5,
+          "a2": 8.0,
+          "exameFinal": 0.0,
+          "mediaSemestral": 7.75,
+          "mediaFinal": 7.75,
+          "situacao": "Aprovado"
+        },
+        {
+          "codigo": "011001132",
+          "nome": "ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES I",
+          "faltas": 5,
+          "a1": 5.0,
+          "a2": 4.5,
+          "exameFinal": 6.0,
+          "mediaSemestral": 4.75,
+          "mediaFinal": 5.5,
+          "situacao": "Aprovado com Exame"
+        },
+        {
+          "codigo": "011001133",
+          "nome": "DESENVOLVIMENTO FRONT-END",
+          "faltas": 10,
+          "a1": 8.0,
+          "a2": 7.5,
+          "exameFinal": 0.0,
+          "mediaSemestral": 7.75,
+          "mediaFinal": 7.75,
+          "situacao": "Aprovado"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "alunoId": 2,
+      "periodo": "2025/1",
+      "disciplinas": [
+        {
+          "codigo": "ENG101",
+          "nome": "Engenharia de Dados",
+          "faltas": 2,
+          "a1": 7.5,
+          "a2": 8.0,
+          "exameFinal": 0.0,
+          "mediaSemestral": 7.75,
+          "mediaFinal": 7.75,
+          "situacao": "Aprovado"
+        },
+        {
+          "codigo": "ALG102",
+          "nome": "Algoritmos",
+          "faltas": 5,
+          "a1": 5.0,
+          "a2": 4.5,
+          "exameFinal": 6.0,
+          "mediaSemestral": 4.75,
+          "mediaFinal": 5.5,
+          "situacao": "Aprovado com Exame"
+        },
+        {
+          "codigo": "CAL102",
+          "nome": "Cálculo",
+          "faltas": 10,
+          "a1": 8.0,
+          "a2": 7.5,
+          "exameFinal": 0.0,
+          "mediaSemestral": 7.75,
+          "mediaFinal": 7.75,
+          "situacao": "Aprovado"
+        }
+      ]
+    }
+  ],
+
+  "cursos": [
+    { "id": 1, "nome": "Sistemas de Informação" },
+    { "id": 2, "nome": "Engenharia de Software" }
+  ],
+
+  "gradesCurriculares": [
+    {
+      "id": 1,
+      "cursoId": 1,
+      "periodo": 1,
+      "disciplinas": [1, 2]
+    },
+    {
+      "id": 2,
+      "cursoId": 1,
+      "periodo": 2,
+      "disciplinas": [3, 4, 5]
+    },
+    {
+      "id": 3,
+      "cursoId": 2,
+      "periodo": 1,
+      "disciplinas": [6, 7]
+    }
+  ],
+
+  "documentos": [
+    {
+      "id": 1,
+      "alunoId": 1,
+      "nome": "Histórico Escolar",
+      "entregue": true
+    },
+    {
+      "id": 2,
+      "alunoId": 1,
+      "nome": "Comprovante de Residência",
+      "entregue": false
+    },
+    {
+      "id": 3,
+      "alunoId": 1,
+      "nome": "Identidade",
+      "entregue": true
+    },
+    {
+      "id": 4,
+      "alunoId": 2,
+      "nome": "Histórico Escolar",
+      "entregue": true
+    },
+    {
+      "id": 5,
+      "alunoId": 2,
+      "nome": "Comprovante de Residência",
+      "entregue": true
+    },
+    {
+      "id": 6,
+      "alunoId": 2,
+      "nome": "Identidade",
+      "entregue": true
+    }
+  ],
+
+  "documentosPadrao": [
+    { "id": 1, "nome": "Foto", "obrigatorio": true },
+    { "id": 2, "nome": "Carteira de Identidade/RG", "obrigatorio": true },
+    { "id": 3, "nome": "Certidão de Nascimento/Casamento", "obrigatorio": true },
+    { "id": 4, "nome": "Histórico Escolar - Ensino Médio", "obrigatorio": true },
+    { "id": 5, "nome": "Certificado Militar/Reservista", "obrigatorio": false },
+    { "id": 6, "nome": "CPF (CIC)", "obrigatorio": true },
+    { "id": 7, "nome": "Diploma/Certificado Registrado", "obrigatorio": true },
+    { "id": 8, "nome": "Comprovante de Vacina", "obrigatorio": false },
+    { "id": 9, "nome": "Título de Eleitor", "obrigatorio": true },
+    { "id": 10, "nome": "Comprovante de Votação", "obrigatorio": true }
+  ],
+
+  "entregasDocumentos": [
+    { "alunoId": 1, "documentoId": 1, "entregue": true },
+    { "alunoId": 1, "documentoId": 2, "entregue": true },
+    { "alunoId": 1, "documentoId": 3, "entregue": true },
+    { "alunoId": 1, "documentoId": 4, "entregue": true },
+    { "alunoId": 1, "documentoId": 5, "entregue": false },
+    { "alunoId": 1, "documentoId": 6, "entregue": true },
+    { "alunoId": 1, "documentoId": 7, "entregue": false },
+    { "alunoId": 1, "documentoId": 8, "entregue": true },
+    { "alunoId": 1, "documentoId": 9, "entregue": false },
+    { "alunoId": 1, "documentoId": 10, "entregue": true }
+  ],
+
+  "disciplinas": [
+    { "id": 1, "codigo": "011001131", "nome": "ALGORITMOS E PROGRAMAÇÃO I", "periodo": 1, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 2, "codigo": "011001132", "nome": "ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES I", "periodo": 1, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 3, "codigo": "011001133", "nome": "DESENVOLVIMENTO FRONT-END", "periodo": 1, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 4, "codigo": "011001134", "nome": "INGLÊS INSTRUMENTAL", "periodo": 1, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 5, "codigo": "011001135", "nome": "LEITURA E PRÁTICA DE PRODUÇÃO TEXTUAL", "periodo": 1, "cargaHoraria": 60, "cursoId": 1 },
+
+    { "id": 6, "codigo": "011001136", "nome": "PRÉ-CÁLCULO", "periodo": 2, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 7, "codigo": "011001137", "nome": "GESTÃO DE PROCESSOS EMPRESARIAIS", "periodo": 2, "cargaHoraria": 30, "cursoId": 1 },
+    { "id": 8, "codigo": "011001138", "nome": "LÓGICA MATEMÁTICA", "periodo": 2, "cargaHoraria": 30, "cursoId": 1 },
+    { "id": 9, "codigo": "011001139", "nome": "ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES II", "periodo": 2, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 10, "codigo": "011001140", "nome": "BANCO DE DADOS I", "periodo": 2, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 11, "codigo": "011001141", "nome": "ALGORITMOS E PROGRAMAÇÃO II", "periodo": 2, "cargaHoraria": 60, "cursoId": 1 },
+
+    { "id": 12, "codigo": "011001142", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL", "periodo": 3, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 13, "codigo": "011001143", "nome": "METODOLOGIA CIENTÍFICA E DA PESQUISA", "periodo": 3, "cargaHoraria": 30, "cursoId": 1 },
+    { "id": 14, "codigo": "011001144", "nome": "SOCIEDADE E TECNOLOGIA", "periodo": 3, "cargaHoraria": 30, "cursoId": 1 },
+    { "id": 15, "codigo": "011001145", "nome": "ESTRUTURAS DE DADOS", "periodo": 3, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 16, "codigo": "011001146", "nome": "TÓPICOS EM PROGRAMAÇÃO I", "periodo": 3, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 17, "codigo": "011001147", "nome": "BANCO DE DADOS II", "periodo": 3, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 18, "codigo": "011001148", "nome": "EMPREENDEDORISMO E INOVAÇÃO", "periodo": 3, "cargaHoraria": 60, "cursoId": 1 },
+
+    { "id": 19, "codigo": "011001149", "nome": "PROJETO INTEGRADOR I", "periodo": 4, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 20, "codigo": "011001150", "nome": "FUNDAMENTOS DE SISTEMAS DE INFORMAÇÃO", "periodo": 4, "cargaHoraria": 30, "cursoId": 1 },
+    { "id": 21, "codigo": "011001151", "nome": "ENGENHARIA DE REQUISITOS", "periodo": 4, "cargaHoraria": 30, "cursoId": 1 },
+    { "id": 22, "codigo": "011001152", "nome": "ENGENHARIA DE SOFTWARE I", "periodo": 4, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 23, "codigo": "011001153", "nome": "TÓPICOS EM PROGRAMAÇÃO II", "periodo": 4, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 24, "codigo": "011001154", "nome": "SISTEMAS OPERACIONAIS", "periodo": 4, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 25, "codigo": "011001155", "nome": "ASPECTOS TEÓRICOS DE COMPUTAÇÃO", "periodo": 4, "cargaHoraria": 60, "cursoId": 1 },
+
+    { "id": 26, "codigo": "011001156", "nome": "PROJETO INTEGRADOR II", "periodo": 5, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 27, "codigo": "011001157", "nome": "GESTÃO ESTRATÉGICA DA INFORMAÇÃO", "periodo": 5, "cargaHoraria": 30, "cursoId": 1 },
+    { "id": 28, "codigo": "011001158", "nome": "OTIMIZAÇÃO PARA SISTEMAS", "periodo": 5, "cargaHoraria": 30, "cursoId": 1 },
+    { "id": 29, "codigo": "011001159", "nome": "ENGENHARIA DE SOFTWARE II", "periodo": 5, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 30, "codigo": "011001160", "nome": "COMPUTAÇÃO ORIENTADA A SERVIÇOS", "periodo": 5, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 31, "codigo": "011001161", "nome": "REDES DE COMPUTADORES I", "periodo": 5, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 32, "codigo": "011001162", "nome": "TÓPICOS EM PROGRAMAÇÃO III", "periodo": 5, "cargaHoraria": 60, "cursoId": 1 },
+
+    { "id": 33, "codigo": "011001163", "nome": "ESTÁGIO SUPERVISIONADO", "periodo": 6, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 34, "codigo": "011001164", "nome": "INTERFACE HUMANO- COMPUTADOR", "periodo": 6, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 35, "codigo": "011001165", "nome": "GOVERNANÇA DE TI", "periodo": 6, "cargaHoraria": 30, "cursoId": 1 },
+    { "id": 36, "codigo": "011001166", "nome": "ENGENHARIA DE QUALIDADE", "periodo": 6, "cargaHoraria": 30, "cursoId": 1 },
+    { "id": 37, "codigo": "011001167", "nome": "ESTATÍSTICA COMPUTACIONAL", "periodo": 6, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 38, "codigo": "011001168", "nome": "INTELIGÊNCIA ARTIFICIAL", "periodo": 6, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 39, "codigo": "011001169", "nome": "REDES DE COMPUTADORES II", "periodo": 6, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 40, "codigo": "011001170", "nome": "PROGRAMAÇÃO PARA DISPOSITIVOS MÓVEIS I", "periodo": 6, "cargaHoraria": 60, "cursoId": 1 },
+
+    { "id": 41, "codigo": "011001171", "nome": "ELABORAÇÃO E GESTÃO DE PROJETOS", "periodo": 7, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 42, "codigo": "011001172", "nome": "SISTEMAS DISTRIBUÍDOS", "periodo": 7, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 43, "codigo": "011001173", "nome": "MINERAÇÃO DE DADOS", "periodo": 7, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 44, "codigo": "011001174", "nome": "PROGRAMAÇÃO PARA DISPOSITIVOS MÓVEIS II", "periodo": 7, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 45, "codigo": "011001175", "nome": "TRABALHO DE CONCLUSÃO DE CURSO I", "periodo": 7, "cargaHoraria": 60, "cursoId": 1 },
+
+    { "id": 46, "codigo": "011001176", "nome": "SEGURANÇA E AUDITORIA DE SISTEMAS", "periodo": 8, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 47, "codigo": "011001177", "nome": "DIREITO E LEGISLAÇÃO EM INFORMÁTICA", "periodo": 8, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 48, "codigo": "011001178", "nome": "SIMULAÇÃO DE SISTEMAS DE INFORMAÇÃO", "periodo": 8, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 49, "codigo": "011001179", "nome": "INFRAESTRUTURA DE REDES COMO SERVIÇOS", "periodo": 8, "cargaHoraria": 60, "cursoId": 1 },
+    { "id": 50, "codigo": "011001180", "nome": "TRABALHO DE CONCLUSÃO DE CURSO II", "periodo": 8, "cargaHoraria": 60, "cursoId": 1 }
+  ],
+
+  "disciplinasCursadas": [
+    { "id": 1, "alunoId": 1, "disciplinaId": 1 },
+    { "id": 2, "alunoId": 1, "disciplinaId": 2 },
+    { "id": 3, "alunoId": 1, "disciplinaId": 3 },
+    { "id": 4, "alunoId": 1, "disciplinaId": 4 },
+    { "id": 5, "alunoId": 1, "disciplinaId": 5 }
+  ]
+}
